@@ -70,8 +70,7 @@ class Command(BaseCommand):
                 'reviews_count': 38,
                 'featured': True,
                 'images': [
-                    'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/mahindra-novo-755.jpg'
                 ]
             },
             {
@@ -101,8 +100,7 @@ class Command(BaseCommand):
                 'reviews_count': 29,
                 'featured': True,
                 'images': [
-                    'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/john-deere-5310.jpg'
                 ]
             },
             {
@@ -131,8 +129,7 @@ class Command(BaseCommand):
                 'reviews_count': 42,
                 'featured': True,
                 'images': [
-                    'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/preet-987-harvester.jpg'
                 ]
             },
             {
@@ -161,8 +158,7 @@ class Command(BaseCommand):
                 'reviews_count': 31,
                 'featured': True,
                 'images': [
-                    'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/dji-agras-t40.jpg'
                 ]
             },
             {
@@ -190,8 +186,7 @@ class Command(BaseCommand):
                 'reviews_count': 19,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1627920769842-6887c6df05ca?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/shaktiman-rotavator.jpg'
                 ]
             },
             {
@@ -219,8 +214,7 @@ class Command(BaseCommand):
                 'reviews_count': 22,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/swaraj-855-fe.jpg'
                 ]
             },
             {
@@ -249,8 +243,7 @@ class Command(BaseCommand):
                 'reviews_count': 14,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/aspee-boom-sprayer.jpg'
                 ]
             },
             {
@@ -278,8 +271,7 @@ class Command(BaseCommand):
                 'reviews_count': 17,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/national-seed-drill.jpg'
                 ]
             },
             {
@@ -310,8 +302,7 @@ class Command(BaseCommand):
                 'reviews_count': 26,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1594771804886-a933bb2d609b?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/kubota-mu4501.jpg'
                 ]
             },
             {
@@ -340,8 +331,7 @@ class Command(BaseCommand):
                 'reviews_count': 15,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&w=1200&q=80'
+                    '/images/equipment/garuda-kisan-drone.jpg'
                 ]
             }
         ]

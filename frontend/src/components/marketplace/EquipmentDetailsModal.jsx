@@ -154,7 +154,7 @@ export const EquipmentDetailsModal = ({ equipment, onClose, onRequestBooking }) 
             <div className="lg:col-span-7 space-y-3">
               <div className="relative aspect-[16/10] rounded-2xl overflow-hidden bg-agri-bg border border-agri-border shadow-sm">
                 <img
-                  src={equipment.images?.[activeImageIndex] || equipment.images?.[0] || 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80'}
+                  src={equipment.images?.[activeImageIndex] || equipment.images?.[0] || '/images/equipment/mahindra-novo-755.jpg'}
                   alt={equipment.name}
                   className="w-full h-full object-cover"
                 />

@@ -120,7 +120,7 @@ export const LandingPage = ({ onSelectEquipment, onOpenAuth }) => {
                 {/* Main Visual with border glow */}
                 <div className="rounded-3xl overflow-hidden border-4 border-white/20 shadow-2xl relative aspect-[4/3] bg-black/40">
                   <img
-                    src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1000&q=80"
+                    src="/images/equipment/mahindra-novo-755.jpg"
                     alt="Indian Farmer with modern tractor in green fields"
                     className="w-full h-full object-cover"
                   />

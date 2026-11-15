@@ -16,7 +16,7 @@ export const EquipmentCard = ({ equipment, onSelect, onBook }) => {
   const [imgError, setImgError] = useState(false);
 
   // Fallback image generator
-  const fallbackImg = 'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80';
+  const fallbackImg = '/images/equipment/mahindra-novo-755.jpg';
 
   return (
     <div className="bg-white rounded-2xl border border-agri-border overflow-hidden shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col group">

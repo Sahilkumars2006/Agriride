@@ -80,7 +80,7 @@ export const MarketplacePage = ({ onSelectEquipment }) => {
             rating: item.rating || 4.9,
             reviewsCount: item.reviews_count || 24,
             featured: item.featured,
-            images: item.images && item.images.length > 0 ? item.images : ['https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=800&q=80'],
+            images: item.images && item.images.length > 0 ? item.images : ['/images/equipment/mahindra-novo-755.jpg'],
             owner: item.owner || { name: 'Verified Partner', verified: true, avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80' },
             description: item.description || 'High-performance agricultural machinery.',
             specs: item.specs || {}
