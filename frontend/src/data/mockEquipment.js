@@ -23,8 +23,7 @@ export const MOCK_EQUIPMENT = [
     fuelPolicy: 'Delivered Full (Return Full)',
     images: [
       'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'High-torque 4WD heavy duty tractor equipped with Digisense smart telematics, AC cabin, and dual clutch. Ideal for deep plowing, heavy rotavator operations, and laser levelling across large acreage.',
     specs: {
@@ -71,7 +70,7 @@ export const MOCK_EQUIPMENT = [
     fuelPolicy: 'Charged as per actuals',
     images: [
       'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'Reliable 55 HP utility tractor with power steering, oil immersed disc brakes, and dual PTO. Super fuel efficient and perfectly balanced for wetland puddling, haulage, and sowing.',
     specs: {
@@ -118,7 +117,7 @@ export const MOCK_EQUIPMENT = [
     fuelPolicy: 'Driver & Fuel Included',
     images: [
       'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'Heavy duty multi-crop combine harvester with 14-foot cutter bar, high-volume grain tank, and straw spreader. Highly tuned for zero grain-loss during wheat and paddy peak harvesting.',
     specs: {
@@ -209,8 +208,8 @@ export const MOCK_EQUIPMENT = [
     operatorIncluded: false,
     fuelPolicy: 'Attachment only',
     images: [
-      'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1627920769842-6887c6df05ca?auto=format&fit=crop&w=1200&q=80'
     ],
     description: '7-foot heavy duty multi-speed rotary tiller with 48 boron steel L-type blades. Delivers optimal soil pulverization in single pass, saving fuel and time for wheat and soybean sowing.',
     specs: {
@@ -255,7 +254,7 @@ export const MOCK_EQUIPMENT = [
     operatorIncluded: true,
     fuelPolicy: 'Farmer provides diesel',
     images: [
-      'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'Legendary Indian workhorse tractor known for pure mechanical reliability, 3-cylinder high displacement engine, power steering, and effortless handling of plows and heavy trolleys.',
@@ -301,8 +300,8 @@ export const MOCK_EQUIPMENT = [
     operatorIncluded: false,
     fuelPolicy: 'Attachment only',
     images: [
-      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80'
     ],
     description: '400 Litre polyethylene chemical tank with 32-foot folding boom arm and anti-drip ceramic nozzles. Excellent for sugarcane, cotton, and horticulture crop protection.',
     specs: {
@@ -347,8 +346,8 @@ export const MOCK_EQUIPMENT = [
     operatorIncluded: false,
     fuelPolicy: 'Attachment only',
     images: [
-      'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1200&q=80'
     ],
     description: '9-row zero-tillage seed drill with dual separate hopper boxes for seed and fertilizer. Ensures uniform seed depth and accurate spacing, saving 25% seed cost.',
     specs: {
@@ -393,7 +392,7 @@ export const MOCK_EQUIPMENT = [
     operatorIncluded: true,
     fuelPolicy: 'Delivered Full (Return Full)',
     images: [
-      'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80',
+      'https://images.unsplash.com/photo-1594771804886-a933bb2d609b?auto=format&fit=crop&w=1200&q=80',
       'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'Japanese-engineered 45 HP 4WD tractor famous for best-in-class fuel economy, planetary bevel gear 4WD axle, and ultra-tight turning radius. Specifically suited for paddy puddling and cotton cultivation.',
@@ -440,7 +439,7 @@ export const MOCK_EQUIPMENT = [
     fuelPolicy: 'Includes Certified Drone Pilot',
     images: [
       'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80',
-      'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80'
+      'https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&w=1200&q=80'
     ],
     description: 'Precision drone specifically built for crop nutrients and pesticide foliar application. Equipped with terrain-following radar and return-to-home autonomous failsafe.',
     specs: {

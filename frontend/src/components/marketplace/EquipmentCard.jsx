@@ -24,7 +24,7 @@ export const EquipmentCard = ({ equipment, onSelect, onBook }) => {
       {/* Image Container with Badges */}
       <div className="relative aspect-[16/10] overflow-hidden bg-agri-bg">
         <img
-          src={imgError ? fallbackImg : equipment.images[0]}
+          src={imgError ? fallbackImg : (equipment.images?.[0] || fallbackImg)}
           alt={equipment.name}
           onError={() => setImgError(true)}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

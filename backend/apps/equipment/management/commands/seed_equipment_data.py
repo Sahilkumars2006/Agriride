@@ -25,7 +25,9 @@ class Command(BaseCommand):
         self.stdout.write(self.style.SUCCESS('Categories seeded successfully.'))
 
         # 2. Find or Create Owner
-        owner = User.objects.filter(role=User.Role.OWNER).first()
+        owner = User.objects.filter(email='owner.dhillon@agriride.org').first()
+        if not owner:
+            owner = User.objects.filter(role=User.Role.OWNER).first()
         if not owner:
             owner = User.objects.create_user(
                 email='owner.dhillon@agriride.org',
@@ -38,7 +40,7 @@ class Command(BaseCommand):
                 address='Samrala Village, Ludhiana, Punjab'
             )
 
-        # 3. Equipment Listings Data
+        # 3. Equipment Listings Data (All 10 matching machinery catalog)
         machines = [
             {
                 'name': 'Mahindra Novo 755 DI (74 HP 4WD)',
@@ -69,7 +71,7 @@ class Command(BaseCommand):
                 'featured': True,
                 'images': [
                     'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80',
-                    'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80'
+                    'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1200&q=80'
                 ]
             },
             {
@@ -99,7 +101,8 @@ class Command(BaseCommand):
                 'reviews_count': 29,
                 'featured': True,
                 'images': [
-                    'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80'
+                    'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80'
                 ]
             },
             {
@@ -128,7 +131,8 @@ class Command(BaseCommand):
                 'reviews_count': 42,
                 'featured': True,
                 'images': [
-                    'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80'
+                    'https://images.unsplash.com/photo-1586771107445-d3ca888129ff?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1200&q=80'
                 ]
             },
             {
@@ -157,7 +161,8 @@ class Command(BaseCommand):
                 'reviews_count': 31,
                 'featured': True,
                 'images': [
-                    'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80'
+                    'https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80'
                 ]
             },
             {
@@ -185,7 +190,8 @@ class Command(BaseCommand):
                 'reviews_count': 19,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&w=1200&q=80'
+                    'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1627920769842-6887c6df05ca?auto=format&fit=crop&w=1200&q=80'
                 ]
             },
             {
@@ -213,7 +219,129 @@ class Command(BaseCommand):
                 'reviews_count': 22,
                 'featured': False,
                 'images': [
-                    'https://images.unsplash.com/photo-1595246140625-573b715d11dc?auto=format&fit=crop&w=1200&q=80'
+                    'https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=1200&q=80'
+                ]
+            },
+            {
+                'name': 'Aspee Tractor Mounted 400L Boom Sprayer',
+                'category_id': 'sprayers',
+                'brand': 'Aspee Agro',
+                'model': 'HTP-400 Giant Master Boom',
+                'year': 2023,
+                'power': 'PTO Driven 540 RPM',
+                'fuel_type': 'PTO Hydraulic',
+                'price_per_hour': Decimal('220.00'),
+                'price_per_day': Decimal('1350.00'),
+                'security_deposit': Decimal('1000.00'),
+                'location': 'Belagavi, Karnataka',
+                'state': 'Karnataka',
+                'available': True,
+                'operator_included': False,
+                'fuel_policy': 'Attachment only',
+                'description': '400 Litre polyethylene chemical tank with 32-foot folding boom arm and anti-drip ceramic nozzles. Excellent for sugarcane, cotton, and horticulture crop protection.',
+                'specs': {
+                    'tankCapacity': '400 Litres Heavy Duty Polyethylene',
+                    'boomLength': '32 Feet (10 meters) Foldable',
+                    'nozzles': '20 Ceramic Anti-Drip Spray Tips'
+                },
+                'rating': 4.7,
+                'reviews_count': 14,
+                'featured': False,
+                'images': [
+                    'https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1560493676-04071c5f467b?auto=format&fit=crop&w=1200&q=80'
+                ]
+            },
+            {
+                'name': 'National Automatic Seed-Cum-Fertilizer Drill',
+                'category_id': 'sowing',
+                'brand': 'National Agro',
+                'model': '9-Tyne Zero-Till Precision Master',
+                'year': 2023,
+                'power': '35+ HP Tractor Required',
+                'fuel_type': 'Attachment',
+                'price_per_hour': Decimal('190.00'),
+                'price_per_day': Decimal('1200.00'),
+                'security_deposit': Decimal('700.00'),
+                'location': 'Karnal, Haryana',
+                'state': 'Haryana',
+                'available': True,
+                'operator_included': False,
+                'fuel_policy': 'Attachment only',
+                'description': '9-row zero-tillage seed drill with dual separate hopper boxes for seed and fertilizer. Ensures uniform seed depth and accurate spacing, saving 25% seed cost.',
+                'specs': {
+                    'numberOfRows': '9 Rows Adjustable (6 to 9 inches)',
+                    'hopperCapacity': '50 kg Seeds + 60 kg Fertilizer'
+                },
+                'rating': 4.85,
+                'reviews_count': 17,
+                'featured': False,
+                'images': [
+                    'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1200&q=80'
+                ]
+            },
+            {
+                'name': 'Kubota MU4501 4WD Orchard & Puddling Specialist',
+                'category_id': 'tractors',
+                'brand': 'Kubota',
+                'model': 'MU4501 4WD Quad-4 Engine',
+                'year': 2023,
+                'power': '45 HP',
+                'fuel_type': 'Diesel',
+                'price_per_hour': Decimal('360.00'),
+                'price_per_day': Decimal('2400.00'),
+                'security_deposit': Decimal('1500.00'),
+                'location': 'Warangal, Telangana',
+                'state': 'Telangana',
+                'available': False,
+                'operator_included': True,
+                'fuel_policy': 'Delivered Full (Return Full)',
+                'description': 'Japanese-engineered 45 HP 4WD tractor famous for best-in-class fuel economy, planetary bevel gear 4WD axle, and ultra-tight turning radius. Specifically suited for paddy puddling and cotton cultivation.',
+                'specs': {
+                    'engineCapacity': '2434 cc 4-Cylinder E-CDIS Engine',
+                    'transmission': '8 Forward + 4 Reverse Synchromesh',
+                    'ptoPower': '38.3 HP Independent Dual Speed',
+                    'liftingCapacity': '1640 kg',
+                    'driveType': '4WD with Bevel Gear Water-Sealed Front Axle'
+                },
+                'rating': 4.92,
+                'reviews_count': 26,
+                'featured': False,
+                'images': [
+                    'https://images.unsplash.com/photo-1594771804886-a933bb2d609b?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1200&q=80'
+                ]
+            },
+            {
+                'name': 'Garuda Aerospace Kisan Drone 16L',
+                'category_id': 'drones',
+                'brand': 'Garuda Aerospace',
+                'model': 'Kisan Drone Type-C Certified',
+                'year': 2024,
+                'power': 'Electric 6-Rotor Hexacopter',
+                'fuel_type': 'Dual LiPo Smart Battery',
+                'price_per_hour': Decimal('700.00'),
+                'price_per_day': Decimal('4200.00'),
+                'security_deposit': Decimal('2000.00'),
+                'location': 'Anand, Gujarat',
+                'state': 'Gujarat',
+                'available': True,
+                'operator_included': True,
+                'fuel_policy': 'Includes Certified Drone Pilot',
+                'description': 'Precision drone specifically built for crop nutrients and pesticide foliar application. Equipped with terrain-following radar and return-to-home autonomous failsafe.',
+                'specs': {
+                    'sprayTank': '16 Litres Liquid payload',
+                    'flightTime': '22 minutes per battery pair',
+                    'radar': 'Millimeter Wave Obstacle Avoidance'
+                },
+                'rating': 4.88,
+                'reviews_count': 15,
+                'featured': False,
+                'images': [
+                    'https://images.unsplash.com/photo-1527977966376-1c8408f9f108?auto=format&fit=crop&w=1200&q=80',
+                    'https://images.unsplash.com/photo-1517404215738-15263e9f9178?auto=format&fit=crop&w=1200&q=80'
                 ]
             }
         ]
@@ -223,19 +351,19 @@ class Command(BaseCommand):
             cat_id = item.pop('category_id')
             cat = Category.objects.get(id=cat_id)
             
-            eq, created = Equipment.objects.update_or_create(
+            eq, _ = Equipment.objects.update_or_create(
                 name=item['name'],
                 owner=owner,
                 defaults={**item, 'category': cat}
             )
 
-            # Add images
-            if created or not eq.images.exists():
-                for idx, img_url in enumerate(images):
-                    EquipmentImage.objects.create(
-                        equipment=eq,
-                        image_url=img_url,
-                        is_primary=(idx == 0)
-                    )
+            # Refresh images to ensure updated machinery photos are saved
+            eq.images.all().delete()
+            for idx, img_url in enumerate(images):
+                EquipmentImage.objects.create(
+                    equipment=eq,
+                    image_url=img_url,
+                    is_primary=(idx == 0)
+                )
 
-        self.stdout.write(self.style.SUCCESS(f'Seeded {len(machines)} agricultural equipment listings.'))
+        self.stdout.write(self.style.SUCCESS(f'Successfully seeded and updated {len(machines)} agricultural equipment listings.'))
