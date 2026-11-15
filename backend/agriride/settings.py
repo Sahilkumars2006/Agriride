@@ -80,10 +80,17 @@ if DATABASE_URL:
         )
     }
 else:
+    # On Vercel serverless functions, the root filesystem is read-only.
+    # We use /tmp/db.sqlite3 which is writable in serverless environments.
+    if os.getenv('VERCEL'):
+        db_path = Path('/tmp') / 'db.sqlite3'
+    else:
+        db_path = BASE_DIR / 'db.sqlite3'
+
     DATABASES = {
         'default': {
             'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
+            'NAME': db_path,
         }
     }
 
